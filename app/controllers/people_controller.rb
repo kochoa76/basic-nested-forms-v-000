@@ -18,13 +18,13 @@ class PeopleController < ApplicationController
 
   def person_params
     params.require(:person).permit(
-    :name, 
+    :name,
     :addresses_attributes=> [
-      :street_addresses_1, 
-      :street_addresses_2, 
-      :city, 
+      :street_addresses_1,
+      :street_addresses_2,
+      :city,
       :state, 
-      :zipcode, 
+      :zipcode,
       :address_type
     ]
     )
